@@ -1,0 +1,43 @@
+.dashboardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rowOne {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.rowOneChart {
+  width: 450px;
+  height: 180px;
+  align-items: center;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #28293f;
+}
+.rowThreeChart {
+  width: 336px;
+  height: 180px;
+  align-items: center;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #28293f;
+}
+
+.rowTwo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.stackedArea {
+  width: 450px;
+  height: 325px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #28293f;
+}

@@ -1,0 +1,45 @@
+body {
+  padding: 10px 0px 10px 40px;
+  font-family: monospace;
+  background: #1d1f2f;
+}
+
+.wrapper {
+  width: 900px;
+  height: 300px;
+  align-items: center;
+  color: rgba(142, 181, 240, 0.733);
+  padding: 15px;
+  padding-top: 30px;
+  background: #28293f;
+}
+
+svg {
+  overflow: visible;
+}
+
+.chartTitle {
+  font-size: 1.2rem;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 5px;
+  text-align: left;
+  font-weight: 700;
+  color: gainsboro;
+}
+
+text {
+  fill: gainsboro;
+  color: gainsboro;
+  font-size: 15px;
+}
+
+.subtitle text {
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.axis .domain,
+.axis.xAxis line {
+  display: none;
+}
