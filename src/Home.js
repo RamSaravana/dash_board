@@ -17,7 +17,6 @@ const Home = () => {
       });
       setData(d);
     });
-    return () => undefined;
   }, []);
 
   return (
