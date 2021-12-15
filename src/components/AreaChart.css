@@ -1,25 +1,15 @@
 body {
-  padding: 10px 0px 10px 40px;
-  font-family: monospace;
+  font-family: "Roboto Condensed", sans-serif;
   background: #1d1f2f;
 }
 
-.wrapper {
-  width: 900px;
-  height: 300px;
-  align-items: center;
-  color: rgba(142, 181, 240, 0.733);
-  padding: 15px;
-  padding-top: 30px;
-  background: #28293f;
-}
-
 svg {
-  overflow: visible;
+  overflow: inherit;
 }
 
 .chartTitle {
   font-size: 1.2rem;
+  justify-content: baseline;
   position: absolute;
   padding-left: 20px;
   padding-top: 5px;

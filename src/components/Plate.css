@@ -1,0 +1,10 @@
+.plateStyle {
+  align-items: center;
+  font-size: 10.5px;
+  color: rgba(240, 248, 255, 0.884);
+}
+
+.plateTitle {
+  text-align: left;
+  padding: 10px 0px 0px 40px;
+}
