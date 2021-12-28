@@ -3,12 +3,11 @@ import AreaChart from "./components/AreaChart";
 import { useEffect, useState } from "react";
 import * as d3 from "d3";
 import Plate from "./components/Plate";
-import ProgressiveBar from "./components/ProgressiveBar";
+import ProgressBar from "./components/ProgressBar";
 
 const Home = () => {
   const [AreaChartData, setAreaChartData] = useState([]);
-
-  const ProgressiveChartData = [81, 70, 94];
+  const [ProgressChartData, setProgressChartData] = useState([]);
 
   useEffect(() => {
     d3.csv("/data.csv").then((d) => {
@@ -19,6 +18,12 @@ const Home = () => {
         i.price = Number(i.price);
       });
       setAreaChartData(d);
+    });
+  }, []);
+
+  useEffect(() => {
+    d3.csv("/progressData.csv").then((d) => {
+      setProgressChartData(d);
     });
   }, []);
 
@@ -33,10 +38,12 @@ const Home = () => {
           dimensions={{ width: "456px", height: "180px" }}
           plateTitle={"PROGRESSIVE BAR CHART"}
         >
-          <ProgressiveBar
-            data={ProgressiveChartData}
-            dimensions={{ width: "546", height: "180" }}
-          />
+          {ProgressChartData.map((i) => (
+            <ProgressBar key={i.month} score={i} />
+          ))}
+          <p>
+            Overall Sales Target - Previous 3 month sales targets achieved in %
+          </p>
         </Plate>
         <Plate
           dimensions={{ width: "456px", height: "180px" }}

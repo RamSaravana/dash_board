@@ -1,0 +1,18 @@
+.progressWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0px 0px 0px 40px;
+  gap: 20px;
+}
+
+.progressScore {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.progressMonth {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+}
